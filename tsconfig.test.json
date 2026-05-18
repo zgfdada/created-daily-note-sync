@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "Node",
+    "strict": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "declaration": false,
+    "outDir": "dist-tests",
+    "rootDir": "src"
+  },
+  "include": ["src/date-utils.ts", "src/path-utils.ts"]
+}

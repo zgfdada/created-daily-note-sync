@@ -1,0 +1,40 @@
+{
+  "name": "created-daily-note-sync",
+  "version": "0.1.0",
+  "description": "根据笔记 created 字段自动补建 Obsidian 日记的插件。",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node esbuild.config.mjs --watch",
+    "build": "tsc -noEmit -skipLibCheck && node esbuild.config.mjs production",
+    "lint": "eslint src/**/*.ts",
+    "test": "tsc -p tsconfig.test.json && node --test tests/**/*.test.mjs",
+    "check:bundle": "powershell -NoProfile -ExecutionPolicy Bypass -File ./scripts/check-bundle.ps1"
+  },
+  "keywords": [
+    "obsidian",
+    "daily-notes",
+    "frontmatter",
+    "created"
+  ],
+  "author": "zgfdada",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "builtin-modules": "^5.0.0",
+    "esbuild": "^0.28.0",
+    "eslint": "^9.17.0",
+    "eslint-plugin-obsidianmd": "^0.2.0",
+    "obsidian": "^1.8.7",
+    "typescript": "^5.6.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgfdada/created-daily-note-sync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zgfdada/created-daily-note-sync/issues"
+  },
+  "homepage": "https://github.com/zgfdada/created-daily-note-sync#readme"
+}
