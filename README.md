@@ -2,7 +2,7 @@
 
 Created Daily Note Sync is an Obsidian plugin that creates missing daily notes from the `created` field in Markdown frontmatter.
 
-[????](./README.zh-CN.md)
+[Chinese README](./README.zh-CN.md)
 
 ## Features
 
@@ -10,10 +10,8 @@ Created Daily Note Sync is an Obsidian plugin that creates missing daily notes f
 - Watches Markdown file changes.
 - Reads `created` from frontmatter.
 - Creates the corresponding daily note if it does not already exist.
-- Adds a command palette action: `???????????`.
-- Adds file explorer context menu actions:
-  - `???????????`
-  - `?????? created ????` for Markdown files.
+- Adds a command palette action: full vault scan and create missing daily notes.
+- Adds file explorer context menu actions for full scan and current Markdown file processing.
 - Uses Chinese in-plugin notices, commands, menu labels, and settings UI.
 - Reuses Obsidian's built-in Daily Notes configuration first, then falls back to plugin settings.
 
@@ -30,7 +28,7 @@ created: 2026-05-18
 The plugin checks whether this file exists:
 
 ```text
-??/2026-05-18.md
+Daily notes folder / 2026-05-18.md
 ```
 
 If it does not exist, the plugin creates it.
@@ -56,10 +54,10 @@ The plugin first reads Obsidian's Daily Notes core plugin configuration from the
 
 If that configuration is missing or unreadable, the plugin falls back to its own settings:
 
-- Fallback daily note folder: `??`
-- Fallback daily note template: `????/????.md`
-- Excluded folders: `??`
-- Show current file during full vault scan: enabled
+- Fallback daily note folder
+- Fallback daily note template
+- Excluded folders
+- Show current file during full vault scan
 
 ## Usage
 
@@ -69,13 +67,7 @@ After the plugin is enabled, edit or save a Markdown file with a valid `created`
 
 ### Full vault scan
 
-Open the command palette and run:
-
-```text
-???????????
-```
-
-The plugin scans Markdown files in the vault and creates missing daily notes for valid `created` dates.
+Open the command palette and run the full vault scan command. The plugin scans Markdown files in the vault and creates missing daily notes for valid `created` dates.
 
 ### Context menu
 
