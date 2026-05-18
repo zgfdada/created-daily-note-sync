@@ -1,9 +1,9 @@
 {
   "id": "created-daily-note-sync",
   "name": "Created Daily Note Sync",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minAppVersion": "1.8.7",
-  "description": "根据笔记 frontmatter 的 created 日期自动补建对应 Obsidian 日记。",
+  "description": "Create missing daily notes from frontmatter created dates.",
   "author": "zgfdada",
   "isDesktopOnly": false
 }

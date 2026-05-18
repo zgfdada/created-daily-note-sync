@@ -1,7 +1,7 @@
 {
   "name": "created-daily-note-sync",
-  "version": "0.1.0",
-  "description": "根据笔记 created 字段自动补建 Obsidian 日记的插件。",
+  "version": "0.1.1",
+  "description": "Create missing daily notes from frontmatter created dates.",
   "type": "module",
   "main": "main.js",
   "scripts": {
